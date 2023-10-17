@@ -40,7 +40,7 @@ export function HomeXD() {
     <div>
       <header>
         <h1>cantidad de atomos ({XYZ.length})</h1>
-        <Link to ='/addy' >Crear atomo</Link>
+        <Link to ='/addy' >Crear nuevo atomo</Link>
       </header>
 
       
