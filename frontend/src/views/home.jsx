@@ -38,10 +38,10 @@ export function HomeXD() {
 
   return (
     <div>
-      <header>
+      <div className='atomStatus'>
         <h1>cantidad de atomos ({XYZ.length})</h1>
         <Link to ='/addy' >Crear nuevo atomo</Link>
-      </header>
+      </div>
 
       
       {renderMain()}

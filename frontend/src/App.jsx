@@ -8,7 +8,10 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div> 
+    <div className='divMain'> 
+      <header>
+        <h3>hola mundo</h3>
+      </header>
       <ProviderXYZ>
         <Routes>      
           <Route path='/' element={<HomeXD />} />
