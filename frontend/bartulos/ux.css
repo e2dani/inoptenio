@@ -1,0 +1,145 @@
+
+.background-1{
+    background-color: #0078d4;  /*celeste microsoft*/
+    background: #E0001B;        /*rojo microsoft*/
+    background-color: #f06;     /*rosa color me |10*/
+    background-color: #ff6d6d;  /*rosa wiroos 8.5*/
+    background-color: #F44336;  /*rosa pallet del sistema 9.5*/
+    background-color: #ff0066;  /*rosa tuenty 9*/
+    background-color: #cddc39;  /*verde-ama fluo del sistema*/
+    background-color: #ffcd40;  /*amarillo wiroos*/
+    background-color: #ffc244;  /*amarillo globo*/
+    background-color: #FDD306;  /**amarillo caba 1*/
+    background-color: #e1e1de;  /*gris bic*/
+    background-color: #00dc91;  /*verde fluo especial*/ 
+    background-color: rgb(255, 252, 0); /*amarillo deg snapchat*/
+
+    background-color: #c1302d;  /*aura*/
+    background: #fcf9f5;    /*coral ok*/
+    /*  */
+}
+
+
+/*============================================================================================================================================*/    
+.background-2{
+
+/*GRADIENTES*/
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+
+    /*actualmente--> .data-autor*/
+    background: #f2709c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*fondo de html-man vs img-back*/
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+    
+
+/*============================================================================================================================================*/        
+
+.background-3{
+    /*ESPECIALES*/
+    background-color: rgba(255, 255, 255, .2);/*blanco especial e2 |10*/
+    background-color: rgb(79, 79, 79); /*gris oscuro especial fondos title oscuros*/    
+    background-color: rgba(var(--b3f,250,250,250),1);/*background instagram blanco*/
+}
+
+
+/*============================================================================================================================================*/    
+
+.letras{    
+    color: #00000080;
+
+    color: rgb(79, 79, 79); /*gris e2 |9*/
+    
+    color: rgba(0,0,0,.6);  /*gris e2, apto para opacities |10*/
+
+    color: #34485E;    /*gris caba, apto para back de fondo liso*/
+
+    text-transform:uppercase;
+}
+
+/*============================================================================================================================================*/    
+.border{
+    /*BORDER INSTAGRAM*/
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+
+    /**/
+
+}
+.box-shadow{
+    box-shadow: 0 8px 17px 0 rgb(80 40 13 / 20%);   /*sombreado min no para hover 10*/
+    
+    box-shadow: 0px 0px 0px 1px #ccc;   /*linea equiv a 1px*/
+
+    box-shadow: 0 8px 17px 0 rgb(80 40 13 / 20%), 0 6px 20px 0 rgb(0 0 0 / 15%);
+    transition: box-shadow .3s; /*recomendado para hover
+    IMP  la transicion para que sea de efecto lento*/
+}
+
+
+/*=================================================================================*/
+/* HOVER EJEMPLOS DESTACADOS*/
+
+/* 1 */
+.box-shadow-ej1{
+    color: #000;
+}
+.box-shadow-ej1:hover{
+    box-shadow: 0 8px 17px 0 rgb(80 40 13 / 20%), 0 6px 20px 0 rgb(0 0 0 / 15%);
+    transition: box-shadow .3s; /*recomendado para hover
+    IMP  la transicion para que sea de efecto lento*/
+}
+/* 1 */
+
+/* 2 */
+.border-ej1{
+    border-radius: 0px;
+    -webkit-transition: 1.5s linear;
+    transition: 1.5s linear;
+}
+.border-ej1:hover{    
+    border-radius: 4px;
+}
+/*2*/
+
+/*=================================================================================*/
+
+
+/*=================================================================================*/
+
+/*::::::::::::::::  BACKGROUND ANIMADOS   ::::::::::::::::*/ 
+
+/*
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+*/
+
+/*
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/
+
+/*=================================================================================*/
+
+/*::::::::::::::::  ESTILO ESMERILADO BACKGROND   ::::::::::::::::*/
+/*
+background-color: rgba(0,0,0,.8);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+*/
+/**/    
