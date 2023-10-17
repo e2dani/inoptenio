@@ -1,0 +1,49 @@
+================================================================
+
+en package.json el type: module
+me permite usar import
+sin embargo para importar modulos propios tendria que usar x.js
+despues colocarle el nombre que quisiera al modulo.
+
+================================================================
+
+routes: archivos para ruta de direcciones 
+
+posts: direcciones para Atomos =>atom/s (articulos periodisticos)
+
+CatCenter: funciones de direcciones, podria acumular varios, para otros usos (user, art, etc)
+
+================================================================
+ERROR HANDLING
+
+SUBIR IMAGENES  (SUBIR IMAGENES) app.js
+    fileUpload
+================================================================
+17/9/23
+en CatCenter.js del back
+en linea 38  
+    if (req.files?.mtzIMG) {    MODIF
+    if (req.files?.mtzIMG) {    ORIG
+temporalmente me ayudara a pasar datos sin la img
+ya que por como esta configurado no me permite cargar en el frontend sin incluir una imagen en el back 
+de localhost:4000/add dir causante
+localhost:5173/addy 
+error: 500
+
+IMP N9
+ESTO IMPLICA QUE LA FUNCION, PARAM, SET
+TIENE UN NIVEL DE IMPORTANCIA DE 9 (ESCALA DEL 1 AL 10)
+================================================================
+
+atomBx.jsx + atomfm.jsx
+{/* //!MUY MPORTANTE (nivel 10')AQUI UTILIZAMOS LOS DATOS DEL "response"(res) */}
+
+================================================================
+backend y frontend desde heroku
+
+db dende mongoatlas
+================================================================
+
+"build": "npm run build --prefix client"
+PARA COMPILAR EL CODIGO DE FRONTEND (REALIZADO POR HUESPED)
+
