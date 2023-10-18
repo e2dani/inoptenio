@@ -34,10 +34,11 @@ export function AtomFmXD() {
   return (
     <div>
       <h1>formulario</h1>
-      <header>
+      <div className="mate">
         <h3>nuevo atomo</h3>
-        <Link to='/'>go back</Link>
-      </header>
+        {/* <Link to='/'>go back</Link> */}
+        <Link to='/dios'>go back</Link>
+      </div>
 
       <Formik
       //TODO ***************************************************************** PROP
@@ -66,7 +67,8 @@ export function AtomFmXD() {
 
           //!CUANDO SE CREA YA ESTA EN TRUE, para ver el estado del formulario
           actions.setSubmitting(false);
-          navegante('/');        //?ENVIAME A LA HOME...
+          // navegante('/');        //?ENVIAME A LA HOME...
+          navegante('/dios');        //?ENVIAME A LA HOME DEL CREADOR...
           
         }} 
         enableReinitialize

@@ -1,4 +1,5 @@
 export { HomeXD } from './home.jsx'
+export { DiosXD } from './dios.jsx'
 export { AtomFmXD } from './atomfm.jsx'
 export { SngXD } from './sng.jsx'
 

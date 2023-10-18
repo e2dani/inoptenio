@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { HomeXD, AtomFmXD, SngXD } from './views'
+import { HomeXD,DiosXD , AtomFmXD, SngXD } from './views'
 import { Routes, Route } from 'react-router-dom'  // ? PARA CREAR MULTIPLES RUTAS
 import { ProviderXYZ } from "./context/atomCtx";
 import { Toaster } from "react-hot-toast";
@@ -8,23 +8,25 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className='divMain'> 
+    <div className='vwMain'> 
       <header>
         <h3>hola mundo</h3>
       </header>
-      <ProviderXYZ>
-        <Routes>      
-          <Route path='/' element={<HomeXD />} />
-          <Route path='/addy' element={<AtomFmXD />} />
-          <Route path='/atomy/:id' element={<AtomFmXD />} /> {/* RUTA DEL ID, VISITANDO EL COMPONENTE AtomFmXD           */}
-          <Route path='*' element={<SngXD />} />
+      <div className='bxGen'>
+        <ProviderXYZ>
+          <Routes>      
+            <Route path='/' element={<HomeXD />} />
+            <Route path='/dios' element={<DiosXD />} />
+            <Route path='/addy' element={<AtomFmXD />} />
+            <Route path='/atomy/:id' element={<AtomFmXD />} /> {/* RUTA DEL ID, VISITANDO EL COMPONENTE AtomFmXD           */}
+            <Route path='*' element={<SngXD />} />
+            
+          </Routes>
+          <Toaster></Toaster> {/* VENTANA DE NOTIFICACIONES OCULTA, PARA toast */}
           
-        </Routes>
-        <Toaster></Toaster> {/* VENTANA DE NOTIFICACIONES OCULTA, PARA toast */}
-        
-      </ProviderXYZ>
-      
-      </div>
+        </ProviderXYZ>
+      </div>  
+    </div>
     
   )
 }
