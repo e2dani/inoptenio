@@ -20,6 +20,11 @@ export function HomeXD() {
         <div className=""><img src="src/assets/stallman.jpg" alt="" /></div>
         <div className=""><img src="src/assets/murphy.png" alt="" /></div>
         <div className=""><img src="src/assets/socrates.jpg" alt="" /></div>       
+        <div>
+          <video controls>
+            <source src="src/assets/vid/temp/vid1.mp4"/>
+          </video>
+        </div>
       </div>
 
       <div className="bxNTall">
@@ -31,7 +36,7 @@ export function HomeXD() {
           <div className="NT">
             <div className="bxNT">
               <div className="tt">
-                <h1>mañana llueve</h1>
+                <h1>Mañana llueve</h1>
               </div>
               <img className="imgNT" src="src/assets/stallman.jpg" alt="" />
               <div className="des">
@@ -44,7 +49,7 @@ export function HomeXD() {
             <div className="bxNT">
               <img src="src/assets/stallman.jpg" alt="" />
               <div className="tt">
-                <h1>mañana llueve</h1>
+                <h1>Mañana llueve</h1>
               </div>
               <div className="des">
                 <p>naa es mentira, el pronostico dice otra cosa pero estaremos atentos a los cambios</p>

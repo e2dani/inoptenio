@@ -77,6 +77,7 @@ header{
   /* background: #f4f4f4; */
   float: left;
 }
+/* !================================! */
 .bxNTvar{
   width: 100%;
   height: auto;
@@ -93,7 +94,7 @@ header{
   transition: box-shadow 0.3s ease 0s;
 }
 
-/* bxNTall */
+/* !================================! */
 .NT{
   margin: 4px;
   float: left;
@@ -107,9 +108,19 @@ header{
   float: left;
 }
 .bxNT >div{
-  padding: 4px;
+  padding: 4px 8px 4px 8px;
 }
-
+.bxNT h1{
+  font-size: 20px;
+  font-family: 'qat1';
+  font-weight: bold;
+  color: rgb(79, 79, 79);
+}
+.bxNT p{
+  font-family: 'adobe1';
+  font-size: 1em;
+  color: #00000080;
+}
 
 /* !================================! */
 

@@ -1,15 +1,15 @@
 
   @font-face {
-    font-family: "don";
+    font-family: "qat1";
     font-style: normal;
     font-weight: 300;
     /*Antes de descargar el archivo, le decimos al buscador
     que intente buscar en local la fuente con nombre
     "Don", Don Regular o Don-Regular */
-    src: local("don"),
-         local("don Regular"),
-         local("don-Regular"),
-         url("../font/don.woff") format("woff");
+    src: local("qat1"),
+         local("qat1 Regular"),
+         local("qat1-Regular"),
+         url("../font/qat1.woff") format("woff");
   }
 
   @font-face {
