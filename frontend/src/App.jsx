@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='vwMain'> 
       <header>
-        <h3>hola mundo</h3>
+        <h3>inoptenio</h3>
       </header>
       <div className='bxGen'>
         <ProviderXYZ>

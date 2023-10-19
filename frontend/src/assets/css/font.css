@@ -1,0 +1,103 @@
+
+  @font-face {
+    font-family: "don";
+    font-style: normal;
+    font-weight: 300;
+    /*Antes de descargar el archivo, le decimos al buscador
+    que intente buscar en local la fuente con nombre
+    "Don", Don Regular o Don-Regular */
+    src: local("don"),
+         local("don Regular"),
+         local("don-Regular"),
+         url("../font/don.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "bravo";
+    font-style: normal;
+    font-weight: 300;
+    src: local("bravo Light"),
+         local("bravo-Light"),
+         url("../font/bravo.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "adobe1";
+    font-style: normal;
+    font-weight: 300;
+    src: local("adobe1 Light"),
+         local("adobe1-Light"),
+         url("../font/adobe1.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "adobe2";
+    font-style: normal;
+    font-weight: 300;
+    src: local("adobe2 Light"),
+         local("adobe2-Light"),
+         url("../font/adobe2.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "f2";
+    font-style: normal;
+    font-weight: 300;
+    src: local("f2 Light"),
+         local("f2-Light"),
+         url("../font/f2.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "f3";
+    font-style: normal;
+    font-weight: 300;
+    src: local("f3 Light"),
+         local("f3-Light"),
+         url("../font/f3.woof") format("woff");
+  }
+
+  @font-face {
+    font-family: "f4";
+    font-style: normal;
+    font-weight: 300;
+    src: local("f4 Light"),
+         local("f4-Light"),
+         url("../font/f4.woof") format("woff");
+  }
+
+  @font-face {
+    font-family: "coolors";
+    font-style: normal;
+    font-weight: 300;
+    src: local("coolors Light"),
+         local("coolors-Light"),
+         url("../font/coolors.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "amatic";
+    font-style: normal;
+    font-weight: 300;
+    src: local("amatic Light"),
+         local("amatic-Light"),
+         url("../font/amatic.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "proximanova";
+    font-style: normal;
+    font-weight: 300;
+    src: local("proximanova Light"),
+         local("proximanova-Light"),
+         url("../font/proximanova-light.woff2") format("woff");
+  }
+
+  @font-face {
+    font-family: "proximanova-800";
+    font-style: normal;
+    font-weight: 300;
+    src: local("proximanova-800 Light"),
+         local("proximanova-800-Light"),
+         url("../font/proximanova-800.woff2") format("woff");
+  }

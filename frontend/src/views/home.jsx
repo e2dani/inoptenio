@@ -24,19 +24,34 @@ export function HomeXD() {
 
       <div className="bxNTall">
         <div className="bxNTdeldia">
-
         </div>
 
         <div className="bxNTvar">
-          <div className="bxNT">
-            <img src="src/assets/stallman.jpg" alt="" />
-            <div className="tt">
-              <h1>mañana llueve</h1>
+
+          <div className="NT">
+            <div className="bxNT">
+              <div className="tt">
+                <h1>mañana llueve</h1>
+              </div>
+              <img className="imgNT" src="src/assets/stallman.jpg" alt="" />
+              <div className="des">
+                <p>naa es mentira, el pronostico dice otra cosa pero estaremos atentos a los cambios</p>
+              </div>
             </div>
-            <div className="des">
-              <p>naa es mentira, el pronostico dice otra cosa pero estaremos atentos a los cambios</p>
+          </div>          
+
+          <div className="NT">
+            <div className="bxNT">
+              <img src="src/assets/stallman.jpg" alt="" />
+              <div className="tt">
+                <h1>mañana llueve</h1>
+              </div>
+              <div className="des">
+                <p>naa es mentira, el pronostico dice otra cosa pero estaremos atentos a los cambios</p>
+              </div>
             </div>
-          </div>
+          </div>         
+          
         </div>
       </div>
       
