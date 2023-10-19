@@ -13,7 +13,6 @@ header{
   width: 100%;
   height: auto;
 }
-/* home.jsx */
 .bxGen{
   width: 100%;
   height: auto;  
@@ -26,3 +25,68 @@ header{
   width: 320px;
   height: auto;
 }
+/* !================================! */
+.bxlocal{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  background: greenyellow;
+}
+.bxlocal >div{
+  width: 100%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+/* !================================! */
+.trend{
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+.trend >div{
+  width: 100%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.trend div >img{
+  max-height: 200px;
+}
+/* !================================! */
+/* bxNTall */
+
+.bxNT{
+  margin: 5px;
+  width: 280px;
+  height: 320px;
+  
+  background: #f1f1f1;
+  float: left;
+}
+.bxNT img{
+  border-radius: 8px;
+
+}
+/* !================================! */
+
+/* !================================! */
+/* !================================! */
+/* !================================! */
+/* !================================! */
+/* !================================! */
