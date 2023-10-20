@@ -95,6 +95,7 @@ header{
 }
 
 /* !================================! */
+/* !/atomBx1.jsx, 2, 3, etc*/
 .NT{
   margin: 4px;
   float: left;
@@ -103,7 +104,7 @@ header{
 }
 .bxNT{
   width: 256px;
-  height: 320px;
+  height: 352px;
   /* padding: 4px; */
   float: left;
 }
@@ -120,6 +121,10 @@ header{
   font-family: 'adobe1';
   font-size: 1em;
   color: #00000080;
+}
+.bxNT img{
+  width: 100%;
+  height: auto;
 }
 
 /* !================================! */
