@@ -2,18 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* DOCUMENTO GENERAL DE DISEÑO  */
+
+/* ESTRUCTURA */
+/* 
+body
+  div #root                    @ @ @ @   DIV GENERAL DE LA APP /index.html 
+    div .vwMain                @ @ @     DIV GENERAL CONTENEDOR PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE /app.jsx 
+      header                   @ @       DIV GENERAL PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE
+      div .bxGen               @ @       DIV GENERAL PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE
+        div .bxGenHome         +|+|+|+|+ DIV GENERAL DE CADA RUTA, UNI-ROUTE  
+          div .bxlocal         +|+|+|+
+          div .trend           +|+|+|+
+          div .bxNTall         +|+|+|+
+            div .bxNTdeldia    +|+|+     
+            div .bxNTvar       +|+|+
+              div .NT          +|+
+                div .bxNT      +
+                  img .imgNT
+                  div .tt
+                  div .des
+*/
 header{
   position: fixed;
   width: 100%;
   height: 64px;
-  /* background: rgba(var(--b3f,250,250,250),1); */
   background: rgba(var(--b3f,250,250,250),1);
 }
-.vwMain{
+.vwMain{        /* @@@ */
   width: 100%;
   height: auto;
 }
-.bxGen{
+.bxGen{       /* @@ */ 
   width: 100%;
   height: auto;  
   margin-top: 64px;
@@ -21,14 +41,14 @@ header{
   /* background: rgb(241, 241, 241); */ /*x3*/
   /*background: #f4f4f4;*/ /*x2*/
 }
-
+/* !================================! */
 .bxAtomStatus{
   background: purple;
   width: 320px;
   height: auto;
 }
 /* !================================! */
-.bxlocal{
+.bxlocal{       /* ++++ */
   height: 64px;
   display: flex;
   flex-direction: row;
@@ -49,7 +69,7 @@ header{
 }
 
 /* !================================! */
-.trend{
+.trend{       /* ++++ */
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -71,14 +91,16 @@ header{
   max-height: 200px;
 }
 /* !================================! */
-.bxNTall{
+.bxNTall{       /* ++++ */
   width: 100%;
   height: auto;
   /* background: #f4f4f4; */
   float: left;
 }
 /* !================================! */
-.bxNTvar{
+.bxNTvar{       /* +++ */
+  /* max-width: 100%; */
+  display: flex;
   width: 100%;
   height: auto;
   float: left;
@@ -96,17 +118,17 @@ header{
 
 /* !================================! */
 /* !/atomBx1.jsx, 2, 3, etc*/
-.NT{
+.NT{        /* ++ */
   margin: 4px;
   float: left;
   background-color: rgb(255, 255, 255);
   border-radius: 16px;
 }
-.bxNT{
+.bxNT{        /* + */
   width: 256px;
   height: 352px;
-  /* padding: 4px; */
   float: left;
+  background: greenyellow;
 }
 .bxNT >div{
   padding: 4px 8px 4px 8px;
@@ -123,7 +145,7 @@ header{
   color: #00000080;
 }
 .bxNT img{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -134,3 +156,16 @@ header{
 /* !================================! */
 /* !================================! */
 /* !================================! */
+/* DISEÑO ADAPTATIVO PARA OTROS DISPOSITIVOS */
+@media (max-width: 700px) {
+  .NT {
+    width: 100%;
+    
+  }
+  .bxNTvar{
+    padding: 4px;
+    align-items: center;
+    flex-direction: column;/* direccion vertical de atomos en mobile */
+    
+  }
+}
