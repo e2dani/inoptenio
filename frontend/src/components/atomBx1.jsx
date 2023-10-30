@@ -12,10 +12,8 @@ export function AtomBx1({hadron}) {
     
         <div className="NT">
             <div className="bxNT">
-              {/* <div className="tt"><h1>{hadron.tt}</h1></div> */}
-              <img className="imgNT" src={hadron.img.EO_url} alt="" />
-              {/* {hadron.img && <img src={hadron.img.EO_url} />}  */}
               <div className="tt"><h1>{hadron.tt}</h1></div>
+              <img className="imgNT" src={hadron.img.EO_url} alt="" />
               <div className="des"><p>{hadron.des}</p></div>
             </div>
           </div>        

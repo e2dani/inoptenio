@@ -121,51 +121,61 @@ header{
 .NT{        /* ++ */
   margin: 4px;
   float: left;
-  background-color: rgb(255, 255, 255);
-  border-radius: 16px;
+  background-color: rgb(255, 255, 255); 
+  /* background-color: coral; */
+  border-radius: 4px;
 }
 .bxNT{        /* + */
   width: 256px;
   height: 352px;
   float: left;
-  background: greenyellow;
+  /* background: greenyellow; */
 }
 .bxNT >div{
   padding: 4px 8px 4px 8px;
 }
-.bxNT h1{
+.tt{
+  background: #04fef8 ;
+  border: 2px solid #34485E;
+}
+.tt h1{
   font-size: 20px;
   font-family: 'qat1';
   font-weight: bold;
-  color: rgb(79, 79, 79);
+  /* color: rgb(79, 79, 79); */
+  color: #34485E;
 }
-.bxNT p{
+.des p{
   font-family: 'adobe1';
   font-size: 1em;
+  font-weight: bold;
   color: #00000080;
 }
 .bxNT img{
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
   height: auto;
 }
 
 /* !================================! */
-
 /* !================================! */
 /* !================================! */
 /* !================================! */
 /* !================================! */
 /* !================================! */
 /* DISEÑO ADAPTATIVO PARA OTROS DISPOSITIVOS */
-@media (max-width: 700px) {
-  .NT {
-    width: 100%;
-    
-  }
+/* @media (max-width: 700px) { */
+  @media (max-width: 512px) {
   .bxNTvar{
-    padding: 4px;
+    padding: 16px;
     align-items: center;
-    flex-direction: column;/* direccion vertical de atomos en mobile */
-    
+    flex-direction: column;/* direccion vertical de atomos en mobile */ 
+  }
+  .NT {
+    width: 100%;    
+  }
+  .bxNT{
+    width: 100%;
+    height: auto;
   }
 }
