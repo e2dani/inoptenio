@@ -102,3 +102,66 @@
          url("../font/proximanova-800.woff2") format("woff");
   }
 
+  @font-face {
+    font-family: "helvetica0";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica0.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "helvetica1";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica1.woff") format("woff");
+  }
+
+
+  @font-face {
+    font-family: "helvetica2";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica2.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "helvetica3";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica3.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "helvetica4";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica4.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "helvetica5";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica5.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "helvetica6";
+    font-style: normal;
+    font-weight: 300;
+    src: local("helvetica Light"),
+         
+         url("../font/helvetica/helvetica6.woff") format("woff");
+  }

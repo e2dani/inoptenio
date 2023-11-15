@@ -8,14 +8,13 @@
 /* 
 body
   div #root                    @ @ @ @   DIV GENERAL DE LA APP /index.html 
-    div .vwMain                @ @ @     DIV GENERAL CONTENEDOR PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE /app.jsx 
+    div .Main                @ @ @     DIV GENERAL CONTENEDOR PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE /app.jsx 
       header                   @ @       DIV GENERAL PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE
-      div .bxGen               @ @       DIV GENERAL PARA TODAS LAS RUTAS, OBJ DIV MULTI-ROUTE
         div .bxGenHome         +|+|+|+|+ DIV GENERAL DE CADA RUTA, UNI-ROUTE  
-          div .bxlocal         +|+|+|+
+          div .bxCtxLocal         +|+|+|+
           div .trend           +|+|+|+
           div .bxNTall         +|+|+|+
-            div .bxNTdeldia    +|+|+     
+            div .bxChismologia    +|+|+     
             div .bxNTvar       +|+|+
               div .NT          +|+
                 div .bxNT      +
@@ -23,120 +22,190 @@ body
                   div .tt
                   div .des
 */
+
+.Main{     
+  display: flex;
+  /* width: 100%; */
+  height: auto;
+  /* padding: 0 16px 16px 16px; */
+  /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+  background: #fafafa;
+  
+}
 header{
   position: fixed;
-  width: 100%;
+  z-index: 9999;
+  /* inset: 0 16px;
+  pointer-events: none; */
+
+  width: 100%; /*destruye todo lo aplicado anteriormente*/
   height: 64px;
   background: rgba(var(--b3f,250,250,250),1);
 }
-.vwMain{        /* @@@ */
+.rack{
   width: 100%;
   height: auto;
-}
-.bxGen{       /* @@ */ 
-  width: 100%;
-  height: auto;  
   margin-top: 64px;
-  float: left;
-  /* background: rgb(241, 241, 241); */ /*x3*/
-  /*background: #f4f4f4;*/ /*x2*/
+  padding: 4px 16px;
 }
+/* *================================! */
+.rackHome{
+  display: grid;
+  gap: 8px 8px;
+}
+/* *================================! */
 /* !================================! */
+/*? dios.jsx */
+
 .bxAtomStatus{
   background: purple;
   width: 320px;
   height: auto;
 }
-/* !================================! */
-.bxlocal{       /* ++++ */
-  height: 64px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
-  background: greenyellow;
-}
-.bxlocal >div{
-  width: 100%;
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
 
 /* !================================! */
-.trend{       /* ++++ */
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
-}
-.trend >div{
-  width: 100%;
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-.trend div >img{
-  max-height: 200px;
-}
-/* !================================! */
-.bxNTall{       /* ++++ */
-  width: 100%;
-  height: auto;
-  /* background: #f4f4f4; */
-  float: left;
-}
-/* !================================! */
-.bxNTvar{       /* +++ */
-  /* max-width: 100%; */
-  display: flex;
-  width: 100%;
-  height: auto;
-  float: left;
-}
-/* .bxNTvar >div:hover{
-  box-shadow: rgba(80, 40, 13, 0.2) 0px 8px 17px 0px, rgba(0, 0, 0, 0.15) 0px 6px 20px 0px;
-  transition: box-shadow 0.3s ease 0s;
+/*? home.jsx host.../home */
+
+/* .portada{
+
 } */
-/* efecto box-shadow a todos los atomos, por searado */
+.random{       
+  float: left;
+  background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.randomCT{       
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 
-.bxNTvar >div{
-  box-shadow: rgba(80, 40, 13, 0.2) 0px 8px 17px 0px, rgba(0, 0, 0, 0.15) 0px 6px 20px 0px;
-  transition: box-shadow 0.3s ease 0s;
+  padding: 8px;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.randomCT >div:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+}
+
+/* *COMPONETES */
+/* !================================! */ 
+
+/*? INI nt_1_0.jsx */
+
+.nt{
+  /* margin: 4px;   */
+  background-color: rgb(255, 255, 255);   
+  border-radius: 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  float: left;
+}
+/* NTbx0 */
+.NTbx0{
+  width: 256px;
+  height: 360px;
+}
+.NTtt{
+  padding: 4px 8px 4px 8px;  
+}
+.NTtt h1{
+  font-size: 20px;
+  font-family: qat1;
+  font-weight: bold;  
+  color: #34485E;
+}
+.NTimg{
+  margin-top: 8px;
+}
+.NTdes{
+  padding: 4px 8px 4px 8px;
+}
+.NTdes p{
+  /* !cortar texto con ... en renglon especifico como tope*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-family: qat1;
+  font-size: 1em;
+  color: #00000080;
+}
+.NTimg img{  
+  width: auto;
+  max-height: 172px;
 }
 
 /* !================================! */
-/* !/atomBx1.jsx, 2, 3, etc*/
+/* ?flash.jsx */
+.flashCT{
+  
+  background-color: #FFFB7D;
+}
+.flashCT{
+  width: 100%;
+  height: 128px;
+  
+}
+/* !================================! */
+
+/* DISEÑO ADAPTATIVO PARA OTROS DISPOSITIVOS */
+/* @media (max-width: 700px) { */
+  @media (max-width: 512px) {
+
+  .Main{
+    background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  }  
+  .random{
+    background: none;
+  }
+  .bxNTvar{
+    padding: 16px;
+    align-items: center;
+    flex-direction: column;/* direccion vertical de atomos en mobile */ 
+  }
+  .nt {
+    width: 100%;    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .NTbx0{
+    width: 100%;
+    height: auto;
+  }
+  .NTbx0 img{
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
+/* !================================! */
+
+/*? /atomBx1.jsx, 2, 3, etc*/
 .NT{        /* ++ */
   margin: 4px;
-  float: left;
-  background-color: rgb(255, 255, 255); 
-  /* background-color: coral; */
+  /* float: left; */
+  background-color: rgb(255, 255, 255);   
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+
+  
+  /* border: 1px solid rgba(var(--b6a,219,219,219),1);  */
+  /* el problema es que suma pxs... al tamaño general */
 }
 .bxNT{        /* + */
   width: 256px;
-  height: 352px;
+  height: 360px;
   float: left;
   /* background: greenyellow; */
 }
-.bxNT >div{
-  padding: 4px 8px 4px 8px;
-}
+
 .tt{
-  background: #04fef8 ;
-  border: 2px solid #34485E;
+  padding: 4px 8px 4px 8px;
+  /* background: #04fef8 ; */
+  /* background: #f06; */
+  /* margin: 4px 4px; add 31/10/23 */
+  /* border: 2px solid #34485E; */
 }
 .tt h1{
   font-size: 20px;
@@ -145,37 +214,33 @@ header{
   /* color: rgb(79, 79, 79); */
   color: #34485E;
 }
+.DVimg0{
+  margin-top: 8px;
+}
+.des{
+  padding: 4px 8px 4px 8px;
+}
 .des p{
-  font-family: 'adobe1';
+  /* !cortar texto con ... en renglon especifico como tope*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  /* font-family: 'adobe1'; */
+  /* padding: 8px; */
+  font-family: qat1;
   font-size: 1em;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #00000080;
 }
 .bxNT img{
   /* max-width: 100%; */
-  width: 100%;
-  height: auto;
+
+  /* width: 100%;
+  height: auto; */
+
+  width: auto;
+  max-height: 172px;
 }
 
-/* !================================! */
-/* !================================! */
-/* !================================! */
-/* !================================! */
-/* !================================! */
-/* !================================! */
-/* DISEÑO ADAPTATIVO PARA OTROS DISPOSITIVOS */
-/* @media (max-width: 700px) { */
-  @media (max-width: 512px) {
-  .bxNTvar{
-    padding: 16px;
-    align-items: center;
-    flex-direction: column;/* direccion vertical de atomos en mobile */ 
-  }
-  .NT {
-    width: 100%;    
-  }
-  .bxNT{
-    width: 100%;
-    height: auto;
-  }
-}

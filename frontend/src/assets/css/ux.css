@@ -16,11 +16,13 @@
 
     background-color: #c1302d;  /*aura*/
     background: #fcf9f5;    /*coral ok*/
-    /*  */
 
-    /* blancos */
-    /* background: rgb(241, 241, 241); */ /*x3*/
-    /* background: #f4f4f4; x2 */
+    /* add 10/2023 */
+    background-color: #04fef8 ; /*10*/
+
+    /* BLANCOS */
+    background: rgb(241, 241, 241); /*x3*/
+    background: #f4f4f4; /*x2*/
 }
 
 
@@ -70,9 +72,10 @@
 /*============================================================================================================================================*/    
 .border{
     /*BORDER INSTAGRAM*/
-    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1); /* el mejor borde 10*/
 
-    /**/
+    /*BORDER CREADO CON BOX-SHADOW*/
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
 }
 .box-shadow{
