@@ -196,10 +196,16 @@ header{
   }  
   /*! INI ACCIONES PARA COMPONENTES  */
   
-
+  .main_content{
+    width: 100%;
+    background: none;
+  }
   .random{
     width: 100%;
     background: none;
+  }
+  .randomCT {
+    padding: 0;
   }
   .sidebar{
     width: 100%;
