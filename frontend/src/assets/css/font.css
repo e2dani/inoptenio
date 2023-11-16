@@ -165,3 +165,12 @@
          
          url("../font/helvetica/helvetica6.woff") format("woff");
   }
+
+  @font-face {
+    font-family: "daily";
+    font-style: normal;
+    font-weight: 300;
+    src: local("DailyFlashback-Regular-Demo"),
+         local("DailyFlashback-Regular-Demo"),
+         url("../font/DailyFlashback-Regular-Demo.woff") format("woff");
+  }
