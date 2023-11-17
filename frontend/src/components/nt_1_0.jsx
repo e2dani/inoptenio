@@ -7,7 +7,7 @@ export function NT_1_0({hadron}) {
                 <div className="NTdata">
                     <div className="xd">
                         <div className="imgxd">
-                            <img src="public/socrates.jpg" alt="" />
+                            <img src="https://media.baamboozle.com/uploads/images/226738/1631700456_121525_gif-url.gif" alt="" />
                         </div>                        
                         <h1>Dani</h1>
                     </div>
