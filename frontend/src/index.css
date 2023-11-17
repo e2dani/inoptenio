@@ -154,6 +154,43 @@ header{
   width: 256px;
   height: 360px;
 }
+/* *ini datos del atomo */
+.NTdata{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background: rgba(var(--b3f,250,250,250),1);
+}
+.xd{
+
+  display: flex;
+  width: 70%;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 8px 0px 8px;
+  font-family: 'helvetica4';
+  color: #34485E;
+}
+.imgxd{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.imgxd img{
+  max-width: fit-content;
+  height: 32px;
+}
+.link_nt{
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+/* *fin datos del atomo */
+
+
 .NTtt{
   padding: 4px 8px 4px 8px;  
 }
@@ -164,7 +201,7 @@ header{
   color: #34485E;
 }
 .NTimg{
-  margin-top: 8px;
+  margin-top: 0px;
 }
 .NTdes{
   padding: 4px 8px 4px 8px;
@@ -226,7 +263,12 @@ header{
     width: 100%;
     height: auto;
   }
-  .NTbx0 img{
+  /* .NTbx0 img{
+    width: 100%;
+    height: auto;
+    max-height: none;
+  } */
+  .NTimg img{
     width: 100%;
     height: auto;
     max-height: none;
